@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Outfit of the Day</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--<link href="bootstrap.css" rel="stylesheet">-->
+    
+    <!-- Custom Fonts --
+    <link href="views/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <!--<link href="grayscale.css" rel="stylesheet">-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Outfit Of</span>The Day 
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#generator">Generator</a>
+                    </li>
+                    <li>
+                        <!--<a class="page-scroll" href="#contact"></a>-->
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Outfit of The Day</h1>
+                        <p class="intro-text">A generator that provides style inspiration. Making the choosing of your outfit of the day easier.
+                            <!--<br>Created by Start Bootstrap.</p>-->
+                        <a href="#about"><img src="img/other/click_here_arrow.png" style="height:90px;width:90px"></a>
+                            <i class="fa fa-angle-double-down animated"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About OOTD</h2>
+                <p> OOTD was created by three awesome St. Louis Kode with Klossy girls.</p>
+                <p>"This idea started out as a simple t-shirt generator, however it spiraled into this amazing outfit generator for daily inspiration in fashion. I'm so happy and proud of this project. I handled more of the homepage (the frontend). One of my favorite seasons is fall, because of the fashion! I love wearing boots, jackets, and nice cozy sweaters."
+                - Mia Hines</p>
+                <p> "I love this website not just because it was designed by my partners and I, but because we learned so much in the process. I've had many days where I was like "Ugh, I don't know what to wear today!" This gets rid of those problems because then I can choose what I want to wear and see it on the computer. I handled most of the directions that the computer was going to use (the back end; ruby). My favorite season is fall/spring, I love wearing comfy shirts paired with basketball or running shorts." -Scarlett Patton</p>
+                <p> "One of my favorite parts about this website was the whole creation process. I worked on finding the pictures and helping to design OOTD. I love fashion because it inspires me. I really enjoy wearing clothes that connect with me personally. My favorite pieces are jeans, tennis shoes, boots, t-shirts, and dresses."<br>-Erica Greenberg</p>
+            </div>
+        </div>
+    </section>
+    
+    <!--Form Section-->
+
+<section id="generator" class="content-section text-center">
+    <h2>Generate Your Outfit of the Day</h2>
+        <div class="generator-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                <h3>Hey look! Instructions :)</h3>    
+                <h3> Please choose one option in all five categories. Each option would then give you the combination of those items.</h3>
+<form method="post" action="/results">
+<br><br><p class="selection"> Tops</p>
+<input type="radio" name="s1" value="t-shirt" id="s1clothes"><label for="s1clothes">T-shirt</label><br/>
+<input type="radio" name="s1" value="blouse" id="s1clothes"><label for="s1clothes">Blouse</label><br/>
+<input type="radio" name="s1" value="long sleeve shirt" id="s1clothes"><label for="s1clothes">Long Sleeve Shirt</label><br/>
+<input type="radio" name="s1" value="tank top" id="s1clothes"><label for="s1clothes">Tank Top</label><br/>
+<br>
+<p class="selection"> Bottoms</p>
+<input type="radio" name="s2" value="jeans" id="s2clothes"><label for="s2clothes">Jeans</label><br/>
+<input type="radio" name="s2" value="jean shorts" id="s2clothes"><label for="s2clothes">Jean Shorts</label><br/>
+<input type="radio" name="s2" value="skirt" id="s2clothes"><label for="s2clothes">Skirt</label><br/>
+<input type="radio" name="s2" value="running shorts" id="s2clothes"><label for="s2clothes">Running Shorts</label><br/>
+<br>
+<p class="selection"> Dresses</p>
+<input type="radio" name="s3" value="formal" id="s3clothes"><label for="s3clothes">Formal</label><br/>
+<input type="radio" name="s3" value="casual" id="s3clothes"><label for="s3clothes">Casual</label><br/>
+<br>
+<p class="selection"> Outerwear</p>
+<input type="radio" name="s4" value="jean jacket" id="s4clothes"><label for="s4clothes">Jean Jacket</label><br/>
+<input type="radio" name="s4" value="casual jacket" id="s4clothes"><label for="s4clothes">Casual Jacket</label><br/>
+<br>
+<p class="selection"> Shoes</p>
+<input type="radio" name="s5" value="heels" id="s5clothes"><label for="s5clothes">Heels</label><br/>
+<input type="radio" name="s5" value="flats" id="s5clothes"><label for="s5clothes">Flats</label><br/>
+<input type="radio" name="s5" value="tennis shoes" id="s5clothes"><label for="s5clothes">Tennis Shoes</label><br/>
+<input type="radio" name="s5" value="flip flops" id="s5clothes"><label for="s5clothes">Flip Flops</label><br/>
+<br><br>
+<!--make the submit farther away using breaks-->
+<input class='btn btn-primary' type='submit' value='Show me the outfit!'>
+</form>
+</section>
+
+
+     <!--Footer -->
+    <footer>
+        <div class="container text-center">
+            <p> © Created in 2017 by Erica, Mia, and Scarlett of KWK</p>
+            <p>Also shoutout (and snaps) to the entire STL KWK girls and team! Wouldn't be here without you! </p>
+        </div>
+    </footer>
+
+     <!--jQuery -->
+    <!--<script src="vendor/jquery/jquery.js"></script>-->
+
+     <!--Bootstrap Core JavaScript -->
+    <!--<script src="vendor/bootstrap/js/bootstrap.min.js"></script>-->
+
+     <!--Plugin JavaScript -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>-->
+
+     <!--Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
+
+     <!--Theme JavaScript -->
+    <!--<script src="js/grayscale.min.js"></script>-->
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>OOTD Selection</title>
+    <h2>Thanks for using our generator!</h2>
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+body {background: black;}
+h1 {font-family: helvetica; color: paleturquoise;}
+h2 {font-family: helvetica; color: paleturquoise;}
+
+</style>
+  </head>
+
+  <body>
+    <center><h1>Your selection is</h1><center>
+    <img src=<%=@tops%> width="300" height="300">
+    <img src=<%=@bottoms%> width="270" height="320">
+    <img src=<%=@shoes%> width="310" height="250">
+    <img src=<%=@dresses%> width="230" height="300">
+    <img src=<%=@jackets%> width="300" height="300">
+    
+   <!--This is where we use the instance variable, @blank, from application controller and apply it inside of the html using ruby by,
+  # and get output/the results of what is being passed though our model on this page--> 
+  </body>
+</html>
+
